@@ -4,4 +4,3 @@ RUN apt-get update \
     make ruby-nokogiri git npm --no-install-recommends && gem install git_stats
 RUN npm config set strict-ssl false && npm cache clean -f && npm install -g n
 RUN n 6.10.2 && npm install
-CMD ["sh", "run.sh"]
